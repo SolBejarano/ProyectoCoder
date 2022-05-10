@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
+
 <body>
     <header class="header">
         <img class="header__logo" src="../imagenes/logoWeb.png" alt="">
@@ -19,50 +26,76 @@
         <nav class="navbar">
             <ul class="header__list">
                 <li><a class="header__textos" href="../index.html">Home</a></li>
-                <li><a class="header__textos" href="contacto.html">Contacto</a></li>
+                <li><a class="header__textos" href="decoracionNordica.html">Contacto</a></li>
                 <li><a class="header__textos" href="decoracionBohoChic.html">Decoración Boho Chic</a></li>
                 <li><a class="header__textos" href="nuestrosHistoria.html">Nuestra Historia</a></li>
             </ul>
         </nav>
     </header>
-<main>
-    <h1 class="titulo">Contactanos</h1>
-    <img class="tamañoimagenprincipal" src="../imagenes/creatividad.jpg" alt="">
-    <form action="" method="post">
-    <div>
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" placeholder="ingresar nombre completo">
+    <main>
+        <div class="contenedorTitulos">
+        <h1 class="titulo">Contactanos</h1>
+        <img class="tamañoImagenPrincipal" src="../imagenes/creatividad.jpg" alt="">
     </div>
-    <div>
-        <label for="edad">Edad</label>
-        <input type="number" id="edad" placeholder="ingrese su edad">
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="ingrese su email">
-    </div>
-    <div>
-        <label for="pais">Pais</label>
-        <select name="pais" id="pais">
-            <option value="argentina">Argentina</option>
-            <option value="uruguay">Uruguay</option>
-            <option value="chile">Chile</option>
-        </select>
-    </div>
-</main>
+        <section class="container-sm">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingresar nombre completo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ingrese su email">
+                            <div id="emailHelp" class="form-text">No compartiremos tu mail con nadie más.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña"
+                                aria-describedby="contraseñaHeuristica" placeholder="Ingresar contraseña">
+                            <div id="contraseñaHeuristica" class="form-text">Debe contener al menos 6-8 dígitos, 1
+                                mayúscula, 1 minúscula y un número.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">País</label>
+                            <select name="pais" id="pais">
+                                <option value="argentina">Argentina</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="chile">Chile</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Crear cuenta</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar datos</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <iframe class="tamañoMapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31255.831066909795!2d-58.45554752324509!3d-34.56964156350109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c193908d5f%3A0xeaa88063ec4f71a7!2sOficinas%20de%20Mercado%20Libre%20SRL!5e0!3m2!1ses-419!2sar!4v1652185316196!5m2!1ses-419!2sar"
+                         height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<footer class="footer">
-    <div>
-    <img class="footer__logo" src="../imagenes/logoWeb.png" alt="">
-    <ul class="footer__list">
-    <span>Seguinos en</span>
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
-    </ul>
-</div>
-</footer>
-</form>
+    <footer class="footer">
+        <div>
+            <img class="footer__logo" src="../imagenes/logoWeb.png" alt="">
+            <ul class="footer__list">
+                <span>Seguinos en</span>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+    </footer>
+    </form>
 
 </body>
+
 </html>
