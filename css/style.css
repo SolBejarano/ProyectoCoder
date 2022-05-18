@@ -69,6 +69,10 @@ main section p {
     height: 300px;
     border-radius: 30px;
 }
+.imagenesCarrousel {
+    width: 100%;
+    height: 25%;
+}
 
 .whatsapp {
     background-color: greenyellow;
@@ -89,7 +93,7 @@ main section p {
     justify-content: space-between;
     align-items: center;
     top: 10px;
-    background-color: burlywood;
+    background-color:  rgb(222, 189, 174);
     z-index: 10;
 }
 
@@ -133,7 +137,7 @@ main section p {
 }
 
 .tituloPrincipal {
-    color: burlywood;
+    color: rgb(218, 192, 169);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 30px;
@@ -164,7 +168,6 @@ main section p {
     font-size: 20px;
     text-align: center;
     width: 80%;
-    margin-left: 150px;
 }
 
 .navbar {
@@ -173,14 +176,14 @@ main section p {
 }
 
 .titulo {
-    color: burlywood;
+    color: rgb(218, 192, 169);
     font-weight: bold;
     font-size: 30px;
     text-align: center;
 }
 
 .titulosLlamativos {
-    color: burlywood;
+    color: rgb(218, 192, 169);
     text-align: center;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -248,7 +251,7 @@ main section p {
 }
 
 .nuestraHistoria__fondoIconos {
-    background-color: burlywood;
+    background-color: rgb(222, 189, 174);
     color: #fff;
     border-radius: 8px;
     padding: 1rem;
@@ -265,7 +268,12 @@ main section p {
     right: 0;
     width: 100px;
     height: 100px;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
 
+.nuestraHistoria__fondoIconos:hover .nuestraHistoria__iconos {
+    transform: rotate(35deg)
 }
 
 .nuestraHistoria__parrafos {
@@ -275,7 +283,11 @@ main section p {
     margin-top: 20px;
     align-self: center;
 }
-
+.nuestraHistoria__background {
+    width: 100%;
+    background-image: url("../imagenes/backgroundImage.jpg")
+    
+}
 .nuestrahistoria__imagenes {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -287,6 +299,15 @@ main section p {
 .nuestrahistoria__imagenempatizar {
     height: 600;
     width: 100%;
+}
+.acordeon_titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.acordeon_texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 .grid {
@@ -355,7 +376,8 @@ main section p {
     justify-content: space-between;
     align-items: center;
     top: 10px;
-    background-color: burlywood;
+    background-color: rgb(218, 192, 169);
+    margin-top: 50px;
 }
 
 .footer__div {
@@ -386,10 +408,6 @@ main section p {
 .tamañoMapa {
     width: 100%;
     margin-bottom: 30px;
-}
-
-.jamcircle-f {
-    color: burlywood;
 }
 
 .header__open {
@@ -442,10 +460,18 @@ main section p {
 
     .header__open {
         display: block;
-        font-size: 25px;
-        color: black;
+        font-size: 32px;
+        color: white;
         text-decoration: none;
     }
+    .cerrar {
+        display: block;
+        transition: 1s;
+        text-decoration: none;
+        color: white;
+    }
+    .cerrar:target 
+    
 
     .header__logo {
         height: 70px;
@@ -467,7 +493,7 @@ main section p {
 
     .tamañoImagenPrincipal {
         width: 100%;
-        height: 50vh;
+        height: 36vh;
         margin: 0%;
         margin-top: 20px;
     }
@@ -558,10 +584,6 @@ main section p {
         padding: 0;
     }
 
-    .contenedorTitulos {
-        margin-top: 100px;
-    }
-
     .footer {
         margin-top: 100px;
         width: 100%;
@@ -637,20 +659,34 @@ main section p {
         height: 250px;
 
     }
+    .acordeon_titulo {
+        font-size: 16px;
+    }
 
     #lateral {
         display: block;
+        background-color: rgb(222, 192, 156, 0.8);
         width: 80%;
         height: 100vh;
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: brown;
         z-index: 100;
         transition: left 1s;
     }
 
     #lateral:target {
-        right: 0;
+        left: 0;
+    }
+    .header__list {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav__item--close {
+        display: block;
     }
 }

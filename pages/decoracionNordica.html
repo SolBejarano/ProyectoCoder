@@ -6,28 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
     <header class="header">
-        <img class="header__logo" src="../imagenes/logoWeb.png" alt="">
-        <a class="header__open" href="x">
+        <img class="header__logo" src="./imagenes/logoEnTuInterior.png" alt="">
+        <a href="#lateral" class="header__open">
             <span class="jam jam-menu"></span>
         </a>
-        <nav class="navbar">
+        <nav class="navbar" id="lateral">
             <ul class="header__list">
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar en la página"
-                        aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-                <li><a class="header__textos" href="../index.html">Home</a></li>
-                <li><a class="header__textos" href="contacto.html">Contacto</a></li>
-                <li><a class="header__textos" href="decoracionBohoChic.html">Decoración Boho Chic</a></li>
-                <li><a class="header__textos" href="nuestrosHistoria.html">Nuestra Historia</a></li>
+                  </form>
+                <li><a class="header__textos" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="header__textos" href="./pages/decoracionNordica.html">Decoración Nódica</a></li>
+                <li><a class="header__textos" href="./pages/decoracionBohoChic.html">Decoración Boho Chic</a></li>
+                <li><a class="header__textos" href="./pages/nuestraHistoria.html">Nuestra historia</a></li>
+                <li><a class="cerrar" href="">volver</a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +49,129 @@
                     con el
                     objetivo de ganar en funcionalidad, sobriedad y en espacio.</dd>
             </div>
+            <div class="col-12 col-md-8 accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="acordeon_titulo accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Qué caracteriza al estilo Nórdico?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="acordeon_texto accordion-body">Resultado de imagen para decoracion nordica caracteristicas
+                            El diseño nórdico, es minimalista -carente de ornamentación-. Se basa sobre espacios
+                            luminosos, de paredes blancas o colores muy claros -por la limitación de iluminación natural
+                            por su clima y localización-. Por el uso de mobiliario de madera, creando un conjunto
+                            sencillo, funcional y lleno de confort.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="acordeon_titulo accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Qué transmite el estilo Nórdico?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="acordeon_texto accordion-body">Elegancia, simpleza, funcionalidad y belleza inmaculada, el estilo
+                            escandinavo atrapa todas estas percepciones. Por ello,si buscas transmitir en tus ambientes,
+                            amplitud, sensación de calidez y tranquilidad este es el estilo perfecto. Propone espacios
+                            ordenados, limpios y funcionales.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="acordeon_titulo accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            ¿Qué colores se utilizan en el estilo Nórdico?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="acordeon_texto accordion-body">Los tonos claros, pasteles y algunos neutros, son ideales para
+                            plasmar el estilo nórdico a través de la pintura para paredes, o bien, de elementos
+                            decorativos. Sin embargo, los colores por excelencia para este tipo de decoración son:
+
+                            Gris.
+                            Blanco.
+                            Arena o maderas claras.
+                            Beige.
+                            Aunque este estilo se puede trasladar a cualquier espacio de tu casa, suele tener un mayor
+                            impacto en las recámaras, ya que transmite mucha calma y hace que los espacios sean muy
+                            acogedores.
+
+                            Gris
+
+                            Los grises claros, a semejanza de los pálidos y nublados cielos escandinavos, son tonos que
+                            podemos ver de forma recurrente en las paredes de recámaras nórdicas. Con textiles de
+                            colores similares y muebles de madera clara se puede crear contrastes que darán sutiliza y
+                            calidez a tu espacio. Si quieres agregarle un detalle que resalte, puedes probar con tonos
+                            más fuertes u oscuros en una de las paredes, solo procura que tengas una buena entrada de
+                            luz natural.
+
+                            Blanco
+
+                            El blanco es un color que nunca falla en tus paredes pues brinda mucha versatilidad. Si
+                            quieres aprovechar la pintura blanca de tus muros en un estilo nórdico puedes combinarlo con
+                            maderas o bien elementos decorativos de tonos arena muy claros. Esto creara un ambiente
+                            lleno de luz y calidez.
+
+                            Beige
+
+                            El colore beige también puede ser un excelente aliado para la decoración nórdica. Si eliges
+                            este color para pintar tus paredes, puedes combinarlo con mobiliario en blanco o de madera.
+                            Arena o maderas claras
+
+                            Los tonos arena o de maderas claras se complementan muy bien con muebles en tonos similares
+                            y en compañía de plantas o elementos decorativos que evoquen la naturaleza. El verde de las
+                            plantas sobresaltará de un espacio sutil, brindando alegría y mayor luz.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/decoracionEscandinava.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>El quid de la cuestión</h5>
+                  <p>Combiná maderas y colores claros para aportar calidez</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/decoracionEscandinava1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Luz natural</h5>
+                  <p>La luz natural como protagonista de la decoración.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/decoracionEscandinava3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section class="decoracionSeccion">
             <div class="grid">
@@ -92,6 +215,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
