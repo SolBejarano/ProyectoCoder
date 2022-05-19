@@ -69,6 +69,7 @@ main section p {
     height: 300px;
     border-radius: 30px;
 }
+
 .imagenesCarrousel {
     width: 100%;
     height: 25%;
@@ -93,7 +94,7 @@ main section p {
     justify-content: space-between;
     align-items: center;
     top: 10px;
-    background-color:  rgb(222, 189, 174);
+    background-color: rgb(222, 189, 174);
     z-index: 10;
 }
 
@@ -124,6 +125,11 @@ main section p {
     align-items: center;
     color: white;
     font-weight: bold;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
 }
 
 .contenedorTitulos {
@@ -186,8 +192,8 @@ main section p {
     color: rgb(218, 192, 169);
     text-align: center;
     font-size: 20px;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .decoracionSeccion {
@@ -237,7 +243,8 @@ main section p {
 }
 
 .iconos__flexbox {
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -248,6 +255,14 @@ main section p {
 .iconos__div {
     width: 150px;
     height: 150px;
+}
+
+.nuestraHistoria__titulos {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nuestraHistoria__fondoIconos {
@@ -276,35 +291,48 @@ main section p {
     transform: rotate(35deg)
 }
 
+.nuestraHistoria__flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
 .nuestraHistoria__parrafos {
     font-size: 16px;
+    font-weight: normal;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     align-self: center;
 }
+
 .nuestraHistoria__background {
-    width: 100%;
-    background-image: url("../imagenes/backgroundImage.jpg")
-    
+    background-image: url("../imagenes/backgroundImage2.jpg")
 }
+
+.nuestraHistoria__background {
+    background-size: contain;
+    height: 75vh;
+}
+
 .nuestrahistoria__imagenes {
-    margin-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
     height: 80%;
     border-radius: 30px;
 }
-
-.nuestrahistoria__imagenempatizar {
-    height: 600;
-    width: 100%;
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 .acordeon_titulo {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
+
 .acordeon_texto {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -381,9 +409,11 @@ main section p {
 }
 
 .footer__div {
-    display: block;
+    display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__logo {
@@ -418,10 +448,15 @@ main section p {
     display: none;
 }
 
+.imagenSustentabilidad {
+    display: none;
+}
+
 
 @media screen and (max-width: 1023px) {
     .header {
         flex-direction: column;
+        max-height: 150px;
     }
 
     .decoracion__div {
@@ -449,6 +484,34 @@ main section p {
         align-items: center;
     }
 
+    .nuestraHistoria__flexbox {
+        height: 50vh;
+    }
+
+    .nuestraHistoria__background {
+        height: 50vh;
+    }
+    .nuestraHistoria__parrafos {
+        font-size: 14px;
+    }
+    .header__textos {
+        font-size: 14px;
+    }
+    .form-control {
+        display: block;
+        width: 50%;
+        height: 50%;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .btn-outline-success {
+        width: 100px;
+    }
+    
+    .btn {
+        line-height: 1;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -464,16 +527,15 @@ main section p {
         color: white;
         text-decoration: none;
     }
+
     .cerrar {
         display: block;
         transition: 1s;
         text-decoration: none;
         color: white;
     }
-    .cerrar:target 
-    
 
-    .header__logo {
+    .cerrar:target .header__logo {
         height: 70px;
         width: 70px;
     }
@@ -545,19 +607,22 @@ main section p {
         width: 200px;
         height: 200px;
     }
-.imagenesCarousel { 
-    display: block;
-    width: 100%;
-    height: 25%;
-}
-.carouselContenedor {
-    margin-bottom: 100px;
-}
 
-.carouselDiv {
-    width: 100%;
-    height: 20%;
-}
+    .imagenesCarousel {
+        display: block;
+        width: 100%;
+        height: 25%;
+    }
+
+    .carouselContenedor {
+        margin-bottom: 100px;
+    }
+
+    .carouselDiv {
+        width: 100%;
+        height: 20%;
+    }
+
     .contenedorParrafo {
         margin-top: 10px;
         padding: 0;
@@ -582,6 +647,14 @@ main section p {
         width: 100%;
         height: 20%;
         padding: 0;
+    }
+
+    .nuestraHistoria__parrafos {
+        font-size: 14px;
+    }
+
+    .nuestraHistoria__background {
+        background-color: white;
     }
 
     .footer {
@@ -649,16 +722,28 @@ main section p {
         border-radius: 15px;
     }
 
+    .iconos__flexbox {
+        margin-top: 20px;
+        margin-bottom: 70px;
+        max-width: 80%;
+        gap: 54px;
+    }
+
+    .iconos__div {
+        width: 50px;
+        height: 50px;
+    }
+
     .nuestraHistoria__fondoIconos {
         width: 100px;
         height: 100px;
     }
 
     .nuestraHistoria__iconos {
-        width: 25px;
-        height: 250px;
-
+        width: 40px;
+        height: 40px;
     }
+
     .acordeon_titulo {
         font-size: 16px;
     }
@@ -678,6 +763,7 @@ main section p {
     #lateral:target {
         left: 0;
     }
+
     .header__list {
         height: 100%;
         flex-direction: column;
