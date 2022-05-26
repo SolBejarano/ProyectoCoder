@@ -1,3 +1,10 @@
 $color-principal: rgb(222, 189, 174);
 $color-secundario: rgb(218, 192, 169);
 $font-family: Arial;
+ 
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }

@@ -57,13 +57,18 @@
 .nuestraHistoria__fondoIconos:hover .nuestraHistoria__iconos {
     transform: rotate(35deg)
 }
+$flexbox: (display:flex,
+ direction:column, 
+ justify:center, 
+ align:center);
 
 .nuestraHistoria__flexbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
+    display:map-get($flexbox, display);
+    flex-direction: map-get($flexbox, direction);
+    justify-content:map-get($flexbox, justify);
+    align-items:map-get($flexbox, justify);
+    height: 66vh;
+    font-stretch: condensed;
 }
 
 .nuestraHistoria__parrafos {
@@ -73,15 +78,23 @@
     font-family: $font-family;
     margin-top: 20px;
     align-self: center;
+    font-stretch: condensed;
+}
+.nuestraHistoria__div {
+    display:map-get($flexbox, display);
+    flex-direction: map-get($flexbox, direction);
+    justify-content:map-get($flexbox, justify);
+    align-items:map-get($flexbox, justify);
+    margin-left: 50px;
 }
 
 .nuestraHistoria__background {
-    background-image: url("../imagenes/backgroundImage2.jpg")
-}
+    background-image: url("../imagenes/backgroundImage.jpg");
+  }
 
 .nuestraHistoria__background {
     background-size: contain;
-    height: 75vh;
+    height: 66vh;
 }
 
 .nuestrahistoria__imagenes {

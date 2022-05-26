@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -66,11 +73,11 @@ main section p {
 }
 
 .producto__precio {
+  font-size: 20px;
   margin: 10px;
   width: 300px;
   height: 20px;
   font-weight: bold;
-  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -78,9 +85,9 @@ main section p {
 .producto__descripcion {
   font-size: 16px;
   margin: 10px;
-  padding: 10px;
   width: 300px;
   height: 100px;
+  padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -97,7 +104,7 @@ main section p {
 }
 
 .whatsapp {
-  background-color: greenyellow;
+  font-size: 32px;
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -370,7 +377,8 @@ main section p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 66vh;
+  font-stretch: condensed;
 }
 
 .nuestraHistoria__parrafos {
@@ -380,15 +388,24 @@ main section p {
   font-family: Arial;
   margin-top: 20px;
   align-self: center;
+  font-stretch: condensed;
+}
+
+.nuestraHistoria__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .nuestraHistoria__background {
-  background-image: url("../imagenes/backgroundImage2.jpg");
+  background-image: url("../imagenes/backgroundImage.jpg");
 }
 
 .nuestraHistoria__background {
   background-size: contain;
-  height: 75vh;
+  height: 66vh;
 }
 
 .nuestrahistoria__imagenes {
@@ -444,9 +461,58 @@ main section p {
   font-size: 14px;
 }
 
+.btn-instagram {
+  color: #833AB4;
+}
+
+.btn-facebook {
+  color: #3b5998;
+}
+
+.btn-twitter {
+  color: #1DA1F2;
+}
+
+.btn-whatsapp {
+  color: #25D366;
+}
+
+.contacto__background {
+  background-image: url("../imagenes/tendencias-contacto.jpg");
+}
+
+.contacto__titulo {
+  font-family: Arial;
+  color: black;
+  margin-top: 130px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto__background {
+  background-size: 100%;
+  height: 113vh;
+}
+
 .tamañoMapa {
   width: 100%;
   margin-bottom: 30px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #debdae;
+  border-color: #debdae;
+}
+
+.form-check-input:checked {
+  background-color: #debdae;
+  border-color: #debdae;
 }
 
 @media screen and (max-width: 1023px) {
@@ -524,6 +590,42 @@ main section p {
   .cerrar:target .header__logo {
     height: 70px;
     width: 70px;
+  }
+  .Col-1 {
+    width: 100;
+  }
+  .Col-2 {
+    width: 200;
+  }
+  .Col-3 {
+    width: 300;
+  }
+  .Col-4 {
+    width: 400;
+  }
+  .Col-5 {
+    width: 500;
+  }
+  .Col-6 {
+    width: 600;
+  }
+  .Col-7 {
+    width: 700;
+  }
+  .Col-8 {
+    width: 800;
+  }
+  .Col-9 {
+    width: 900;
+  }
+  .Col-10 {
+    width: 1000;
+  }
+  .Col-11 {
+    width: 1100;
+  }
+  .Col-12 {
+    width: 1200;
   }
   .navbar {
     display: none;
@@ -615,11 +717,14 @@ main section p {
     height: 20%;
     padding: 0;
   }
+  .nuestraHistoria__flexbox {
+    height: 80vh;
+  }
   .nuestraHistoria__parrafos {
     font-size: 14px;
   }
   .nuestraHistoria__background {
-    background-color: white;
+    height: 80vh;
   }
   .footer {
     margin-top: 100px;
@@ -678,21 +783,24 @@ main section p {
   }
   .iconos__flexbox {
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
     max-width: 80%;
     gap: 54px;
   }
   .iconos__div {
     width: 50px;
-    height: 50px;
-  }
-  .nuestraHistoria__fondoIconos {
-    width: 100px;
     height: 100px;
   }
+  .nuestraHistoria__background {
+    background-image: url("../imagenes/backgroundImageMobile.jpg");
+  }
+  .nuestraHistoria__fondoIconosMobile {
+    width: 70px;
+    height: 70px;
+  }
   .nuestraHistoria__iconos {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .acordeon_titulo {
     font-size: 16px;
@@ -721,5 +829,26 @@ main section p {
   .nav__item--close {
     display: block;
   }
+}
+
+.nuestraHistoria__div {
+  margin-left: 0;
+}
+
+.contacto__background {
+  height: 44vh;
+}
+
+.contacto__titulo {
+  height: 44vh;
+}
+
+form {
+  display: block;
+  align-self: center;
+}
+
+.form-text {
+  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,35 @@
+.contacto__background {
+    background-image: url("../imagenes/tendencias-contacto.jpg");
+}
+.contacto__titulo {
+    font-family: $font-family;
+    color: black;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__background {
+    background-size: 100%;
+    height: 113vh;
+}
+
 .tamañoMapa {
     width: 100%;
     margin-bottom: 30px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $color-principal;
+    border-color: $color-principal;
+}
+
+.form-check-input:checked {
+    background-color: $color-principal;
+    border-color: $color-principal;
 }
