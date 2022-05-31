@@ -29,7 +29,7 @@ main section p {
 }
 
 .tituloPrincipal {
-  color: #dac0a9;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -38,14 +38,51 @@ main section p {
   bottom: 20px;
 }
 
+.frase {
+  background-color: rgba(222, 189, 174, 0.7);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
 .tamaño {
   width: 300px;
   height: 300px;
 }
 
-.tamañoImagenPrincipal {
+.sectionPrincipal {
   width: 100%;
-  height: 20%;
+  height: 150vh;
+}
+
+.tamañoImagenPrincipal {
+  background-image: url("../imagenes/imagen-principal.jpg");
+}
+
+.tamañoImagenPrincipal {
+  background-size: cover;
+  width: 100%;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: inicio;
+  animation-duration: 3s;
+}
+
+@keyframes inicio {
+  0% {
+    transform: scale 1;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .producto {
@@ -96,11 +133,16 @@ main section p {
   width: 300px;
   height: 300px;
   border-radius: 30px;
+  transition: transform 2s;
+}
+
+.producto__imagen:hover {
+  transform: scale(1.5);
 }
 
 .imagenesCarrousel {
   width: 100%;
-  height: 25%;
+  height: 100vh;
 }
 
 .whatsapp {
@@ -183,6 +225,60 @@ main section p {
   gap: 30px;
 }
 
+.nordico__background {
+  background-image: url(../imagenes/estiloNordico.png);
+}
+
+.nordico__background {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: inicio;
+  animation-duration: 3s;
+}
+
+@keyframes inicio {
+  0% {
+    transform: scale 1;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.boho__background {
+  background-image: url(../imagenes/estiloBohoChic.png);
+}
+
+.boho__background {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: inicio;
+  animation-duration: 3s;
+}
+
+@keyframes inicio {
+  0% {
+    transform: scale 1;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .textoDecoracion {
   width: 90%;
   font-size: 20px;
@@ -195,6 +291,17 @@ main section p {
   font-size: 20px;
   text-align: center;
   width: 80%;
+}
+
+.titulo__decoracion {
+  color: black;
+  background-color: rgba(222, 189, 174, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  top: 10px;
+  bottom: 20px;
 }
 
 .titulo {
@@ -232,6 +339,11 @@ main section p {
   width: 350px;
   height: 400px;
   border-radius: 30px;
+  transition: transform 2s;
+}
+
+.decoracion__imagen:hover {
+  transform: scale(1.5);
 }
 
 .decoracion__titulos {
@@ -256,6 +368,16 @@ main section p {
 .acordeon_texto {
   font-family: Arial;
   font-size: 16px;
+}
+
+.w-100 {
+  height: 125vh;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  font-weight: bold;
 }
 
 .grid {
@@ -419,8 +541,25 @@ main section p {
   margin-bottom: 20px;
 }
 
+.nuestraHistoria__tamaño {
+  width: 100%;
+  height: 100%;
+}
+
 .imagenSustentabilidad {
   display: none;
+}
+
+.personas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista {
+  text-decoration: none;
+  text-align: center;
 }
 
 .footer {
@@ -496,7 +635,21 @@ main section p {
 
 .contacto__background {
   background-size: 100%;
-  height: 113vh;
+  height: 137vh;
+  animation-name: inicio;
+  animation-duration: 3s;
+}
+
+@keyframes inicio {
+  0% {
+    transform: scale 1;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .tamañoMapa {
@@ -513,6 +666,10 @@ main section p {
 .form-check-input:checked {
   background-color: #debdae;
   border-color: #debdae;
+}
+
+.contacto__background {
+  height: 137vh;
 }
 
 @media screen and (max-width: 1023px) {
@@ -535,7 +692,7 @@ main section p {
   }
   .grid {
     padding: 1rem;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -553,6 +710,9 @@ main section p {
   }
   .header__textos {
     font-size: 14px;
+  }
+  .contacto__background {
+    height: 124vh;
   }
   .form-control {
     display: block;
@@ -639,9 +799,12 @@ main section p {
   }
   .tamañoImagenPrincipal {
     width: 100%;
-    height: 36vh;
+    height: 30%;
     margin: 0%;
     margin-top: 20px;
+  }
+  .frase {
+    font-size: 14px;
   }
   .main {
     width: 100%;
@@ -654,35 +817,37 @@ main section p {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    width: 100%;
     gap: 10px;
     margin: 0;
     margin-left: 30px;
     padding: 10px;
   }
   .producto__div {
-    width: 200px;
+    justify-content: center;
+    width: 100%;
     height: 365px;
     margin: 0 0 5px 0;
   }
   .producto__titulo {
-    font-size: 17px;
-    width: 200px;
+    font-size: 16px;
+    width: 100%;
   }
   .producto__precio {
-    font-size: 17px;
-    width: 200px;
+    font-size: 16px;
+    width: 100%;
     height: 20px;
     margin: 0;
   }
   .producto__descripcion {
-    font-size: 16px;
-    width: 200px;
+    font-size: 14px;
+    width: 100%;
     height: 50px;
     margin: 0 0 5px 0;
   }
   .producto__imagen {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 250px;
   }
   .imagenesCarousel {
     display: block;
@@ -753,6 +918,18 @@ main section p {
     font-size: 12px;
     text-align: center;
   }
+  .nordico__background {
+    height: 50vh;
+  }
+  .boho__background {
+    height: 50vh;
+  }
+  .acordeon_texto {
+    font-size: 14px;
+  }
+  .accordion-button {
+    font-size: 14px;
+  }
   .grid {
     margin-top: 20px;
     margin-left: 2px;
@@ -770,7 +947,7 @@ main section p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    width: 100%;
     height: 200px;
   }
   .decoracion__titulos {
@@ -794,20 +971,20 @@ main section p {
   .nuestraHistoria__background {
     background-image: url("../imagenes/backgroundImageMobile.jpg");
   }
-  .nuestraHistoria__fondoIconosMobile {
-    width: 70px;
-    height: 70px;
+  .nuestraHistoria__fondoIconos {
+    width: 95px;
+    height: 100px;
   }
   .nuestraHistoria__iconos {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
   .acordeon_titulo {
     font-size: 16px;
   }
   #lateral {
     display: block;
-    background-color: rgba(222, 192, 156, 0.8);
+    background-color: rgba(222, 189, 174, 0.7);
     width: 80%;
     height: 100vh;
     position: fixed;
@@ -836,11 +1013,11 @@ main section p {
 }
 
 .contacto__background {
-  height: 44vh;
+  height: 80vh;
 }
 
 .contacto__titulo {
-  height: 44vh;
+  height: 77vh;
 }
 
 form {
