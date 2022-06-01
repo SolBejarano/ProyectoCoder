@@ -176,10 +176,12 @@
         height: 250px;
     }
 
-    .imagenesCarousel {
-        display: block;
+    .imagenesCarrousel {
         width: 100%;
-        height: 25%;
+        height: 50vh;
+    }
+    .d-block { 
+        height: 50vh;
     }
 
     .carouselContenedor {
