@@ -846,7 +846,7 @@ main section p {
     margin: 0 0 5px 0;
   }
   .producto__imagen {
-    width: 100%;
+    width: 90%;
     height: 250px;
   }
   .imagenesCarrousel {
@@ -986,7 +986,7 @@ main section p {
   }
   #lateral {
     display: block;
-    background-color: rgba(222, 189, 174, 0.7);
+    background-color: rgba(222, 189, 174, 0.9);
     width: 80%;
     height: 100vh;
     position: fixed;
