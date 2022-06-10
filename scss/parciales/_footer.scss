@@ -48,5 +48,6 @@ $redes: (
 $value in $redes {
     .btn-#{$key} {
         color: $value;
+        text-decoration: none;
     }
 }

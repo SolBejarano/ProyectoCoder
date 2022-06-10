@@ -539,6 +539,7 @@ main section p {
 .row {
   margin-top: 20px;
   margin-bottom: 20px;
+  list-style: none;
 }
 
 .nuestraHistoria__tamaño {
@@ -558,7 +559,6 @@ main section p {
 }
 
 .lista {
-  text-decoration: none;
   text-align: center;
 }
 
@@ -602,18 +602,22 @@ main section p {
 
 .btn-instagram {
   color: #833AB4;
+  text-decoration: none;
 }
 
 .btn-facebook {
   color: #3b5998;
+  text-decoration: none;
 }
 
 .btn-twitter {
   color: #1DA1F2;
+  text-decoration: none;
 }
 
 .btn-whatsapp {
   color: #25D366;
+  text-decoration: none;
 }
 
 .contacto__background {
@@ -751,42 +755,6 @@ main section p {
     height: 70px;
     width: 70px;
   }
-  .Col-1 {
-    width: 100;
-  }
-  .Col-2 {
-    width: 200;
-  }
-  .Col-3 {
-    width: 300;
-  }
-  .Col-4 {
-    width: 400;
-  }
-  .Col-5 {
-    width: 500;
-  }
-  .Col-6 {
-    width: 600;
-  }
-  .Col-7 {
-    width: 700;
-  }
-  .Col-8 {
-    width: 800;
-  }
-  .Col-9 {
-    width: 900;
-  }
-  .Col-10 {
-    width: 1000;
-  }
-  .Col-11 {
-    width: 1100;
-  }
-  .Col-12 {
-    width: 1200;
-  }
   .navbar {
     display: none;
   }
@@ -804,7 +772,7 @@ main section p {
     margin-top: 20px;
   }
   .frase {
-    font-size: 14px;
+    font-size: 12px;
   }
   .main {
     width: 100%;
@@ -813,10 +781,6 @@ main section p {
     justify-content: center;
   }
   .producto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
     width: 100%;
     gap: 10px;
     margin: 0;
@@ -824,7 +788,10 @@ main section p {
     padding: 10px;
   }
   .producto__div {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 365px;
     margin: 0 0 5px 0;
@@ -846,15 +813,15 @@ main section p {
     margin: 0 0 5px 0;
   }
   .producto__imagen {
-    width: 90%;
+    width: 85%;
     height: 250px;
   }
   .imagenesCarrousel {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
   }
   .d-block {
-    height: 50vh;
+    height: 40vh;
   }
   .carouselContenedor {
     margin-bottom: 100px;
@@ -909,6 +876,9 @@ main section p {
   .titulosLlamativos {
     font-size: 15px;
   }
+  .titulo__decoracion {
+    font-size: 23px;
+  }
   .decoracion__div {
     display: flex;
     justify-content: center;
@@ -921,10 +891,10 @@ main section p {
     text-align: center;
   }
   .nordico__background {
-    height: 50vh;
+    height: 40vh;
   }
   .boho__background {
-    height: 50vh;
+    height: 35vh;
   }
   .acordeon_texto {
     font-size: 14px;
@@ -1015,11 +985,11 @@ main section p {
 }
 
 .contacto__background {
-  height: 80vh;
+  height: 40vh;
 }
 
 .contacto__titulo {
-  height: 77vh;
+  height: 40vh;
 }
 
 form {

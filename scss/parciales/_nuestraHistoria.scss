@@ -105,6 +105,7 @@ $flexbox: (display:flex,
 .row {
     margin-top: 20px;
     margin-bottom: 20px;
+    list-style: none;
 }
 .nuestraHistoria__tamaño {
     width: 100%;
@@ -121,6 +122,5 @@ $flexbox: (display:flex,
     align-items: center;
 }
 .lista {
-    text-decoration: none;
     text-align: center;
 }
