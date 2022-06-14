@@ -126,7 +126,7 @@ main section p {
   height: 100px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+  text-align: center justify;
 }
 
 .producto__imagen {
