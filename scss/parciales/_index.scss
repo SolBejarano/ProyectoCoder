@@ -10,6 +10,7 @@ main section p {
     padding: 15px;
     width: 80%;
 }
+
 .contenedorTitulos {
     margin-top: 130px;
     margin-bottom: 20px;
@@ -29,7 +30,8 @@ main section p {
     top: 10px;
     bottom: 20px;
 }
-.frase { 
+
+.frase {
     background-color: $color-principal-opacity;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,13 +44,16 @@ main section p {
     width: 300px;
     height: 300px;
 }
-.sectionPrincipal { 
+
+.sectionPrincipal {
     width: 100%;
     height: 150vh;
 }
+
 .tamañoImagenPrincipal {
     background-image: url("../imagenes/imagen-principal.jpg");
 }
+
 .tamañoImagenPrincipal {
     background-size: cover;
     width: 100%;
@@ -61,9 +66,19 @@ main section p {
     animation-duration: 3s;
 
 }
-@keyframes inicio { 0% { transform: scale 1;}
-50% {transform: scale(1.25);}
-100% { transform: scale(1)}
+
+@keyframes inicio {
+    0% {
+        transform: scale 1;
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1)
+    }
 }
 
 .producto {
@@ -74,12 +89,14 @@ main section p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &__div {
+        width: 300px;
+        height: 500px;
+    }
+
 }
 
-.producto__div {
-    width: 300px;
-    height: 500px;
-}
 
 .producto__titulo {
     width: 300px;
@@ -96,30 +113,35 @@ main section p {
     margin: $margin;
     width: $width;
     height: $height;
-  }
+}
+
 .producto__precio {
     @include producto (20px, 10px, 300px, 20px);
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-  }
-  
-  .producto__descripcion {
+}
+
+.producto__descripcion {
     @include producto (16px, 10px, 300px, 100px);
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center justify;
-  }
+    text-align: center;
+}
 
 .producto__imagen {
     width: 300px;
     height: 300px;
     border-radius: 30px;
     transition: transform 2s;
+    
+    &:hover {
+        transform: scale(1.2);
+    }
 }
-.producto__imagen:hover {
-transform: scale(1.5);
-}
+
+
+
 .imagenesCarrousel {
     width: 100%;
     height: 100vh;
