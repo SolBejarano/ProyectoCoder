@@ -58,10 +58,6 @@ main section p {
 }
 
 .tamañoImagenPrincipal {
-  background-image: url("../imagenes/imagen-principal.jpg");
-}
-
-.tamañoImagenPrincipal {
   background-size: cover;
   width: 100%;
   height: 105vh;
@@ -71,6 +67,10 @@ main section p {
   align-items: center;
   animation-name: inicio;
   animation-duration: 3s;
+}
+
+.tamañoImagenPrincipal {
+  background-image: url("../imagenes/imagen-principal.jpg");
 }
 
 @keyframes inicio {
@@ -109,6 +109,17 @@ main section p {
   text-align: center;
 }
 
+.producto__imagen {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  transition: transform 2s;
+}
+
+.producto__imagen:hover {
+  transform: scale(1.2);
+}
+
 .producto__precio {
   font-size: 20px;
   margin: 10px;
@@ -127,17 +138,6 @@ main section p {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-}
-
-.producto__imagen {
-  width: 300px;
-  height: 300px;
-  border-radius: 30px;
-  transition: transform 2s;
-}
-
-.producto__imagen:hover {
-  transform: scale(1.2);
 }
 
 .imagenesCarrousel {
@@ -226,10 +226,6 @@ main section p {
 }
 
 .nordico__background {
-  background-image: url(../imagenes/estiloNordico.png);
-}
-
-.nordico__background {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -238,6 +234,10 @@ main section p {
   align-items: center;
   animation-name: inicio;
   animation-duration: 3s;
+}
+
+.nordico__background {
+  background-image: url(../imagenes/estiloNordico.png);
 }
 
 @keyframes inicio {
@@ -253,10 +253,6 @@ main section p {
 }
 
 .boho__background {
-  background-image: url(../imagenes/estiloBohoChic.png);
-}
-
-.boho__background {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -265,6 +261,10 @@ main section p {
   align-items: center;
   animation-name: inicio;
   animation-duration: 3s;
+}
+
+.boho__background {
+  background-image: url(../imagenes/estiloBohoChic.png);
 }
 
 @keyframes inicio {
@@ -343,7 +343,7 @@ main section p {
 }
 
 .decoracion__imagen:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .decoracion__titulos {
@@ -365,7 +365,7 @@ main section p {
   font-weight: bold;
 }
 
-.acordeon_texto {
+.acordeon_titulo_texto {
   font-family: Arial;
   font-size: 16px;
 }
@@ -406,6 +406,12 @@ main section p {
 
 .grid__hijo--3 {
   grid-area: ele3;
+  object-fit: cover;
+  align-content: center;
+}
+
+.grid__hijo--4 {
+  grid-area: ele4;
   object-fit: cover;
   align-content: center;
 }
@@ -620,10 +626,6 @@ main section p {
   text-decoration: none;
 }
 
-.contacto__background {
-  background-image: url("../imagenes/tendencias-contacto.jpg");
-}
-
 .contacto__titulo {
   font-family: Arial;
   color: black;
@@ -642,6 +644,10 @@ main section p {
   height: 137vh;
   animation-name: inicio;
   animation-duration: 3s;
+}
+
+.contacto__background {
+  background-image: url("../imagenes/tendencias-contacto.jpg");
 }
 
 @keyframes inicio {
@@ -800,6 +806,10 @@ main section p {
     font-size: 16px;
     width: 100%;
   }
+  .producto__imagen {
+    width: 85%;
+    height: 250px;
+  }
   .producto__precio {
     font-size: 16px;
     width: 100%;
@@ -811,10 +821,6 @@ main section p {
     width: 100%;
     height: 50px;
     margin: 0 0 5px 0;
-  }
-  .producto__imagen {
-    width: 85%;
-    height: 250px;
   }
   .imagenesCarrousel {
     width: 100%;
@@ -985,7 +991,7 @@ main section p {
 }
 
 .contacto__background {
-  height: 40vh;
+  height: 37vh;
 }
 
 .contacto__titulo {

@@ -133,21 +133,26 @@
         margin: 0;
         margin-left: 30px;
         padding: 10px;
-    }
 
-    .producto__div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 365px;
-        margin: 0 0 5px 0;
-    }
+        &__div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 365px;
+            margin: 0 0 5px 0;
+        }
 
-    .producto__titulo {
-        font-size: 16px;
-        width: 100%;
+        &__titulo {
+            font-size: 16px;
+            width: 100%;
+        }
+        &__imagen {
+            width: 85%;
+            height: 250px;
+        }
+
     }
 
     .producto__precio {
@@ -162,11 +167,6 @@
         width: 100%;
         height: 50px;
         margin: 0 0 5px 0;
-    }
-
-    .producto__imagen {
-        width: 85%;
-        height: 250px;
     }
 
     .imagenesCarrousel {
@@ -368,7 +368,7 @@
 }
 
 .contacto__background {
-    height: 40vh;
+    height: 37vh;
 }
 
 .contacto__titulo {
